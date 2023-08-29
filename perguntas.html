@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>  
-    <style>
-        .titulo-pagina{
-            text-align: center;
-        }
-        .bloco-perguntas{
-            background-color: aqua;
-            width: 100%;
-            height: 80vh;
-            padding: 5px;
-        }
-        .pergunta{
-            background-color: blanchedalmond;
-            width: 75%;
-            min-height: 10vh;
-            border: 1px solid rgb(234, 230, 230);
-            border-radius: 15px;
-            margin: 10px auto;
-            padding: 5px;
-        }
-        .opcao{
-            display: block;
-        }
-
-    </style>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <title>Perguntas</title>  
 </head>
 <body>
     <header>
         <h2 class="titulo-pagina">Seja bem-vindo, usuário!</h2>
     </header>
     <main class="bloco-perguntas">
-        <form action="">
-            <div class="pergunta">
-                <label for="">Questão 1</label>
+        <form action="resultado.html" id="regForm">
+            <div class="pergunta tab">
+                <label for="" class="txt-perg">Questão 1</label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 1
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 2
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 3
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 4
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 5
+                </label>
+            </div>
+
+            <div class="pergunta tab">
+                <label for="" class="txt-perg">Questão 2</label>
                 <label for="" class="opcao">
                     <input type="radio" name="q1" id="">
                     resposta 1
@@ -59,8 +61,48 @@
                 </label>
             </div>
            
+            <div class="pergunta tab">
+                <label for="" class="txt-perg">Questão 3</label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 1
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 2
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 3
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 4
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 5
+                </label>
+            </div>
+
+            <div>
+                <div class="btns">
+                  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                  <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+                </div>
+              </div>
+              
+              <!-- Circles which indicates the steps of the form: -->
+              <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+            
         </form>
     </main>
     <footer></footer>
+    <script src="assets/js/multstep.js"></script>
 </body>
 </html>
