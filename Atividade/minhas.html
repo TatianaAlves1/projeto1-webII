@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #657863;
+        }
+        header{
+            text-align: center;
+            color: #8EF984;
+            padding: 10px;
+        }
+        .categorias{
+            width: 100%;
+            min-height: 450px;
+            background-color:#D1F7CD;
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px
+        }
+        .bloco-item{
+            width: 300px;
+            height: 350px;
+            flex: 0 0 300px;
+            border: 1px solid rgb(215, 215, 215);
+            background-color: #A6C4A3;
+            padding: 10px;
+            border-radius: 15px;           
+        }
+        .img-bloco{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .titulo-bloco{
+            text-align: center;
+            
+        }
+        .txt-secao{
+            margin-left: 25px;
+            color: #8EF984;
+            
+        }
+        @media screen and (max-width:998px) {
+            .txt-secao{
+                text-align: center;
+            } 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Atividade HTML e CSS</h1>
+    </header>
+    <main>
+        <h2 class="txt-secao">Árvores Frutíferas</h2>
+        <section class="categorias">
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore1.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore2.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore3.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+        </section>
+        <h2 class="txt-secao">Espécies em Extinção</h2>
+        <section class="categorias">
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore4.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore5.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore6.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+        </section>
+        <h2 class="txt-secao">Arborização Urbana</h2>
+        <section class="categorias">
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore1.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore3.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+            <div class="bloco-item">
+                <img class="img-bloco" src="img/arvore4.jpg" alt="">
+                <h3 class="titulo-bloco">Nome da árvore</h3>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
